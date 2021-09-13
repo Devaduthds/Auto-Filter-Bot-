@@ -28,14 +28,14 @@ async def start(bot, update):
             await update.reply_cached_media(
                 file_id,
                 quote=True,
-                caption = caption,
+                caption = f"<code>{file_name}</code>\n \n<b>♻️Join with us: @movie_house2</b>",
                 parse_mode="html",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
                             InlineKeyboardButton
                                 (
-                                    'Developers', url="https://t.me/CrazyBotsz"
+                                    '⭕️ Join our Channel ⭕️', url="https://t.me/ds_movies1"
                                 )
                         ]
                     ]
@@ -47,10 +47,10 @@ async def start(bot, update):
         return
 
     buttons = [[
-        InlineKeyboardButton('Developers', url='https://t.me/CrazyBotsz'),
-        InlineKeyboardButton('Source Code 🧾', url ='https://github.com/CrazyBotsz/Adv-Auto-Filter-Bot-V2')
+        InlineKeyboardButton('My Developer', url='https://t.me/DS_KUNJAVA'),
+        InlineKeyboardButton('Source Code 🧾', url ='https://github.com/Devaduthds/Auto-Filter-Bot-.git')
     ],[
-        InlineKeyboardButton('Support 🛠', url='https://t.me/CrazyBotszGrp')
+        InlineKeyboardButton('Support 🙏', url='https://t.me/movie_house2')
     ],[
         InlineKeyboardButton('Help ⚙', callback_data="help")
     ]]
